@@ -8,7 +8,7 @@ import partha.firebasechatdemo.fragments.ChatListFragment;
 import partha.firebasechatdemo.fragments.FriendListFragment;
 
 /**
- * TODO: Created by Tanay Mondal on 06-04-2017
+ * TODO: Created by Partha Chatterjee
  */
 
 public class FragmentPagerAdapter extends FragmentStatePagerAdapter {
