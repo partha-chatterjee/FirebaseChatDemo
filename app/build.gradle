@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url 'https://jitpack.io' }
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "partha.firebasechatdemo"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+
+    // Firebase UI
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'de.hdodenhof:circleimageview:1.3.0'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+
+    // Google
+    compile 'com.google.android.gms:play-services-auth:10.2.1'
+
+    // Firebase
+    compile 'com.google.firebase:firebase-analytics:10.2.1'
+    compile 'com.google.firebase:firebase-database:10.2.1'
+    compile 'com.google.firebase:firebase-storage:10.2.1'
+    compile 'com.google.firebase:firebase-auth:10.2.1'
+    compile 'com.google.firebase:firebase-config:10.2.1'
+    compile 'com.google.android.gms:play-services-appinvite:10.2.1'
+    compile 'com.google.firebase:firebase-messaging:10.2.1'
+    compile 'com.google.android.gms:play-services-ads:10.2.1'
+    compile 'com.google.firebase:firebase-appindexing:10.2.1'
+    compile 'com.google.firebase:firebase-crash:10.2.1'
+    compile 'com.google.firebase:firebase-analytics:10.2.1'
+
+    // Firebase UI
+    compile 'com.firebaseui:firebase-ui-database:1.2.0'
+
+    // Bind using ButterKnife
+    compile 'com.jakewharton:butterknife:7.0.1'
+
+    // Chat UI
+    compile 'com.github.bassaer:chatmessageview:1.3.3'
+    // Emoji
+    compile 'com.github.hani-momanii:SuperNova-Emoji:1.1'
+
+    // Testing dependencies
+    androidTestCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support:support-annotations:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
+
+    // WEB RTC
+//    compile 'io.pristine:libjingle:9694@aar'
+//    compile 'com.pubnub:pubnub-android:3.7.4'
+//    compile 'me.kevingleason:pnwebrtc:1.0.6@aar'
+}
+
+apply plugin: 'com.google.gms.google-services'

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--<external-path name="my_images" path="Android/data/com.dapl.escortapp/files/images" />-->
+    <!--<external-path path="Android/data/com.dapl.escortapp/" name="my_images" />-->
+    <!--<external-path path="." name="external_storage_root" />-->
+    <!--<external-path name="my_images" path="."/>-->
+    <!--<files-path name="media"/>-->
+    <!--<external-path name="my_images" path="Pictures/zm/" />-->
+    <!--<external-files-path name="my_images" />-->
+    <files-path name="img" path="images/" />
+</paths>
